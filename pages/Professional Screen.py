@@ -23,12 +23,7 @@ from IPython.display import Audio
 home_title = "InterVista"
 st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
 st.markdown("""\n""")
-st.markdown("#### Behavioral Interview Screen")
-
-#st.markdown("""solutions to potential errors:""")
-with st.expander("""Why did I encounter errors when I tried to talk to the AI Interviewer?"""):
-    st.write("""
-    This is because the app failed to record. Make sure that your microphone is connected and that you have given permission to the browser to access your microphone.""")
+st.markdown("#### Professional Interview Screen")
 
 jd = st.text_area("Please enter the job description here (If you don't have one, enter keywords, such as PostgreSQL or Python instead): ")
 auto_play = st.checkbox("Let AI interviewer speak! (Please don't switch during the interview)")
