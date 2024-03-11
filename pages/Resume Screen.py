@@ -20,6 +20,12 @@ import json
 from IPython.display import Audio
 import nltk
 
+home_title = "InterVista"
+
+st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
+st.markdown("""\n""")
+st.markdown("#### Resume Screening")
+
 
 #st.toast("4097 tokens is roughly equivalent to around 800 to 1000 words or 3 minutes of speech. Please keep your answer within this limit.")
 st.markdown("""\n""")
