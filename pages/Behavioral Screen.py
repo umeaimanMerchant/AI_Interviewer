@@ -22,6 +22,8 @@ from IPython.display import Audio
 
 home_title = "InterVista"
 st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
+st.markdown("""\n""")
+st.markdown("#### Resume Screening")
 
 st.markdown("""\n""")
 jd = st.text_area("""Please enter the job description here (If you don't have one, enter keywords, such as "communication" or "teamwork" instead): """)
