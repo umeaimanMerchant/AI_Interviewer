@@ -1,7 +1,10 @@
-import openai
 import os
-openai.api_key = os.getenv("OPENAI_API_KEY")
 import wave
+import speech_recognition as sr
+
+# obtain audio from the microphone
+r = sr.Recognizer()
+
 
 class Config:
     channels = 2
@@ -16,7 +19,9 @@ def save_wav_file(file_path, wav_bytes):
         wav_file.writeframes(wav_bytes)
 
 def transcribe(file_path):
-    audio_file = open(file_path, 'rb')
-    transcription = openai.Audio.transcribe("whisper-1", audio_file)
-    return transcription['text']
-
+    harvard = sr.AudioFile(file_path)
+    with harvard as source:
+        audio = r.record(source)
+        text = r.recognize_google(audio)
+        print(text)
+        return text
