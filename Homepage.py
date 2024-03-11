@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 from app_utils import switch_page
 import streamlit as st
