@@ -10,7 +10,6 @@ from langchain.chains import RetrievalQA, ConversationChain
 from langchain.prompts.prompt import PromptTemplate
 from prompts.prompts import templates
 from typing import Literal
-from aws.synthesize_speech import synthesize_speech
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.text_splitter import NLTKTextSplitter
