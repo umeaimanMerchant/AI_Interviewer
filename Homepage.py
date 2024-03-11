@@ -44,12 +44,19 @@ if lan == "English":
     st.markdown("""\n""")
     st.markdown("#### Get started!")
     st.markdown("Select one of the following screens to start your interview!")
+
     selected = option_menu(
             menu_title= None,
             options=["Professional", "Resume", "Behavioral","Customize!"],
             icons = ["cast", "cloud-upload", "cast"],
             default_index=0,
             orientation="horizontal",
+            styles={
+            "container": {"padding": "0!important", "background-color": "#fafafa"},
+            "icon": {"color": "orange", "font-size": "25px"}, 
+            "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+            "nav-link-selected": {"background-color": "green"},
+            }
         )
     if selected == 'Professional':
         st.info("""
