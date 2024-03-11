@@ -7,6 +7,11 @@ from PIL import Image
 im = Image.open("icon.png")
 #st.set_page_config(page_title = "Intervista: AI Interviewer", layout = "centered",page_icon=im)
 
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=False, quality="high", height=100)
+
 lan = "English"
 
 if lan == "English":
