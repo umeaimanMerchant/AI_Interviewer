@@ -20,6 +20,7 @@ from audio_recorder_streamlit import audio_recorder
 from IPython.display import Audio
 import openai
 import os
+import getpass
 # key
 if "OPENAI_API_KEY" not in os.environ:
     os.environ["OPENAI_API_KEY"] = getpass.getpass("Provide your Google API Key")
