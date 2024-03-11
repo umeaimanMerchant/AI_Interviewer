@@ -157,7 +157,7 @@ def answer_call_back():
         # speech synthesis and speak out
         audio_file_path = synthesize_speech(llm_answer)
         # create audio widget with autoplay
-        audio_widget = Audio(audio_file_path, autoplay=True)
+        audio_widget = Audio("aws/"+ audio_file_path, autoplay=True)
         # save audio data to history
         st.session_state.history.append(
             Message("ai", llm_answer)
