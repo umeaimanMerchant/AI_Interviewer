@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 im = Image.open("icon.png")
-st.set_page_config(page_title = "Intervista: AI Interviewer", layout = "centered",page_icon=im)
+#st.set_page_config(page_title = "Intervista: AI Interviewer", layout = "centered",page_icon=im)
 
 lan = "English"
 
@@ -27,7 +27,7 @@ if lan == "English":
         "<style>#MainMenu{visibility:hidden;}</style>",
         unsafe_allow_html=True
     )
-    st.image(im, width=100)
+    #st.image(im, width=100)
     st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
     st.markdown("""\n""")
     #st.markdown("#### Greetings")
