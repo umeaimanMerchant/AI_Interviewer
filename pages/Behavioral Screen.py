@@ -22,7 +22,7 @@ import openai
 import os
 
 # key
-openai.api_key = st.secrets["OPENAI_API_KEY"])
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 home_title = "InterVista"
 st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
