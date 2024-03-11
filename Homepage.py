@@ -28,7 +28,7 @@ if lan == "English":
         unsafe_allow_html=True
     )
     #st.image(im, width=100)
-    st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
+    st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
     st.markdown("""\n""")
     #st.markdown("#### Greetings")
     st.markdown("""Welcome to Intervista! 👏 
