@@ -31,8 +31,9 @@ if lan == "English":
     st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
     st.markdown("""\n""")
     #st.markdown("#### Greetings")
-    st.markdown("Welcome to AI Interviewer! 👏 AI Interviewer is your personal interviewer powered by generative AI that conducts mock interviews."
-                "You can upload your resume and enter job descriptions, and AI Interviewer will ask you customized questions. Additionally, you can configure your own Interviewer!")
+    st.markdown("""Welcome to Intervista! 👏 
+                Intervista is your personal interviewer powered by generative AI that conducts mock interviews.
+                You can upload your resume and enter job descriptions, and AI Interviewer will ask you customized questions. Additionally, you can configure your own Interviewer!""")
     st.markdown("""\n""")
     st.markdown("#### Get started!")
     st.markdown("Select one of the following screens to start your interview!")
