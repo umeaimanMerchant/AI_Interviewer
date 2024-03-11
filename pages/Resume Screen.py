@@ -1,7 +1,7 @@
 # langchain: https://python.langchain.com/
 from dataclasses import dataclass
 import streamlit as st
-from speech_recognition.openai_whisper import save_wav_file, transcribe
+from sp_recog.recog import save_wav_file, transcribe
 from audio_recorder_streamlit import audio_recorder
 from langchain.callbacks import get_openai_callback
 from langchain.chat_models import ChatOpenAI
