@@ -21,11 +21,6 @@ from IPython.display import Audio
 import nltk
 
 
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=True, quality="high", height=300)
-
 #st.toast("4097 tokens is roughly equivalent to around 800 to 1000 words or 3 minutes of speech. Please keep your answer within this limit.")
 st.markdown("""\n""")
 position = st.selectbox("Select the position you are applying for", ["Data Analyst", "Software Engineer", "Marketing"])
