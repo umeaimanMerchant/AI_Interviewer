@@ -20,10 +20,10 @@ from audio_recorder_streamlit import audio_recorder
 from IPython.display import Audio
 
 
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=True, quality="high", height=300)
+home_title = "InterVista"
+st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
+st.markdown("""\n""")
+st.markdown("#### Behavioral Interview Screen")
 
 #st.markdown("""solutions to potential errors:""")
 with st.expander("""Why did I encounter errors when I tried to talk to the AI Interviewer?"""):
