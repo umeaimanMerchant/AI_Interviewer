@@ -20,12 +20,9 @@ from audio_recorder_streamlit import audio_recorder
 from IPython.display import Audio
 import openai
 import os
-import getpass
-# key
-if "OPENAI_API_KEY" not in os.environ:
-    os.environ["OPENAI_API_KEY"] = getpass.getpass("Provide your Google API Key")
 
-openai.api_key = os.environ["OPENAI_API_KEY"]
+# key
+openai.api_key = OPENAI_API_KEY
 
 home_title = "InterVista"
 st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
