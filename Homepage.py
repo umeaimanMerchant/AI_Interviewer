@@ -17,7 +17,7 @@ st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=F
 lan = "English"
 
 if lan == "English":
-    home_title = "InterVista: AI Interviewer"
+    home_title = "InterVista"
     home_introduction = "Welcome to AI Interviewer, empowering your interview preparation with generative AI."
     with st.sidebar:
         st.markdown('InterVista: 1.0')
