@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 from app_utils import switch_page
 import streamlit as st
 from PIL import Image
+import json
 
 im = Image.open("icon.png")
 #st.set_page_config(page_title = "Intervista: AI Interviewer", layout = "centered",page_icon=im)
