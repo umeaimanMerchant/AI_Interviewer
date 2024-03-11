@@ -22,7 +22,7 @@ import nltk
 
 home_title = "InterVista"
 
-st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>ai</font></span>""",unsafe_allow_html=True)
+st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
 st.markdown("""\n""")
 st.markdown("#### Resume Screening")
 
