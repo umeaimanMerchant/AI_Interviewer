@@ -15,7 +15,7 @@ from langchain.vectorstores import FAISS
 import nltk
 from prompts.prompts import templates
 # Audio
-from speech_recognition.openai_whisper import save_wav_file, transcribe
+from sp_recog.recog import save_wav_file, transcribe
 from audio_recorder_streamlit import audio_recorder
 from IPython.display import Audio
 
