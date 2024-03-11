@@ -53,7 +53,7 @@ if lan == "English":
             orientation="horizontal",
             styles={
             "container": {"background-color": "#09d0f8"},
-            "nav-link-selected": {"background-color": "#94b0b7"},
+            "nav-link-selected": {"background-color": "#6aadc2"},
             }
         )
     if selected == 'Professional':
