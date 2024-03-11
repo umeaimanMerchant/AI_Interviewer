@@ -18,10 +18,13 @@ from prompts.prompts import templates
 from sp_recog.recog import save_wav_file, transcribe
 from audio_recorder_streamlit import audio_recorder
 from IPython.display import Audio
-# key
 import openai
 import os
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# key
+if "OPENAI_API_KEY" not in os.environ:
+    os.environ["OPENAI_API_KEY"] = getpass.getpass("Provide your Google API Key")
+
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 home_title = "InterVista"
 st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>.ai</font></span>""",unsafe_allow_html=True)
