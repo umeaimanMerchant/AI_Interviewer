@@ -12,7 +12,7 @@ im = Image.open("icon.png")
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
-st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=False, quality="high", height=100)
+st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=True, quality="high", height=100)
 
 lan = "English"
 
